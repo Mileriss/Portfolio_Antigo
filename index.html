@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <!--Padrão-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Formatação geral-->
+    <link rel="stylesheet" href="fmtc_geral.css" />
+    <!--Responsividade-->
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="icon" href="./Icones/icone-aba.png" />
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--FONT AWESOME-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Pixelify+Sans&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen&family=Zen+Dots&family=Tektur:wght@700&display=swap" rel="stylesheet" />
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <title>Rafael Mileris</title>
+  </head>
+  <body>
+    <!--
+      ╔╗╔╔═╗╦  ╦╔╗ ╔═╗╦═╗
+      ║║║╠═╣╚╗╔╝╠╩╗╠═╣╠╦╝
+      ╝╚╝╩ ╩ ╚╝ ╚═╝╩ ╩╩╚═      
+    -->
+    <!--Estrutura inicial-->
+    <nav id="navbar-principal" class="navbar navbar-dark bg-dark fixed-top">
+      <div id="div-navbar-principal" class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler bg-gradient" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <!--Cabeçalho da estrutura secundária-->
+          <div id="cabecalho-lista-navbar" class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!--Div da lista da estrutura secundaria-->
+          <div id="div-lista-navbar" class="offcanvas-body fundo-borrado">
+
+            <!-- <div id="video-apresentacao">
+              <video autoplay muted loop>
+                <source src="./Videos/glitch-roxo.mp4" type="video/mp4" />
+              </video>
+            </div> -->
+            
+            <!--Lista da estrutura secundária-->
+            <ul id="lista-navbar" class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <a class="link-item-navbar nav-link" href="#apresentacao">
+                <li id="navbar-apresentacao" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao roxo">Apresentação</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#secao-sobre-mim">
+                <li id="navbar-sobre-mim" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao rosa-shock">Sobre mim</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#objetivo">
+                <li id="navbar-objetivo" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao azul-claro">Objetivo</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#projetos">
+                <li id="navbar-projetos" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao verde-claro">Projetos</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#contato">
+                <li id="navbar-contato" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao laranja">Contato</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--
+      ╔═╗╔═╗╦═╗╔═╗╔═╗╔═╗╔╗╔╔╦╗╔═╗╔═╗╔═╗╔═╗
+      ╠═╣╠═╝╠╦╝║╣ ╚═╗║╣ ║║║ ║ ╠═╣║  ╠═╣║ ║
+      ╩ ╩╩  ╩╚═╚═╝╚═╝╚═╝╝╚╝ ╩ ╩ ╩╚═╝╩ ╩╚═╝   
+    -->
+    <section id="secao-apresentacao" class="secoes">
+      <!--Conteudo apresentação-->
+      <div id="apresentacao" class="img-de-fundo espacamento-div">
+        <div id="bloco-apresentacao" class="fundo-escuro">
+          <div id="div-txt-apresentacao" class="container">
+            <h1 id="titulo-apresentacao" class="titulo-principal">Seja bem vindo(a) ao meu portfólio!</h1>
+            <p class="txt-apresentacao">Me chamo <span id="rafael-mileris" class="txt-principal">Rafael Mileris</span> e sou um estudante de programação.</p>
+            <div id="redes-contato" class="fundo-borrado">
+              <a href="https://github.com/Mileriss" target="_blank"><img class="icone-redes" src="./Icones/icone-github-2.svg" alt="Icone do site Github" /></a>
+              <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img class="icone-redes" src="./Icones/icone-gmail-preto.svg" alt="Icone do sistema de e-mails GMAIL" /></a>
+              <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img class="icone-redes" src="./Icones/icone-linkedin-preto.svg" alt="Icone da rede social Linkedin" /></a>
+              <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img class="icone-redes" src="./Icones/icone-whatsapp-preto.svg" alt="Icone da rede social Whatsapp" /></a>
+            </div>
+          </div>
+          <div id="div-img-apresentacao" class="container">
+            <img id="background-img-apresentacao" class="borda-padrao roxo" src="https://cdn.pixabay.com/photo/2018/11/14/20/50/hd-3816045_1280.jpg" alt="Imagem de fundo da seção apresentação" />
+            <img id="img-apresentacao" src="./Imagens-sem-fundo/Rafael-Mileris-AI-4-sem-fundo.png" alt="Imagem de apresentação do perfil Rafael Mileris" title="Eu gerado por Inteligencia Artificial" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ╔═╗╔═╗╔╗ ╦═╗╔═╗  ╔╦╗╦╔╦╗
+      ╚═╗║ ║╠╩╗╠╦╝║╣   ║║║║║║║
+      ╚═╝╚═╝╚═╝╩╚═╚═╝  ╩ ╩╩╩ ╩ 
+    -->
+    <section id="secao-sobre-mim" class="secoes">
+      <div id="sobre-mim" class="img-de-fundo">
+        <div id="bloco-sobre-mim" class="espacamento-div">
+          <h1 id="titulo-sobre-mim" class="titulo-principal">Sobre mim</h1>
+          <div id="grid-sobre-mim" class="container-fluid">
+            <div id="habilidades" class="fundo-borrado borda-dupla azul-claro">
+              <h2 id="sub-titulo-habilidades" class="sub-titulo deslocamento-txt">Habilidades</h2>
+
+              <!--Frontend-->
+              <div id="habilidades-front">
+                <div class="borda-padrao azul-claro">
+                  <h3 class="titulo-bloco-habilidades">Front-end</h3>
+                  <div id="frontend" class="bloco-habilidades">
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-html.svg" class="icone-habilidades" alt="Icone da Tecnologia Hypertext Markup Language (HTML)" title="HTML" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-avancado">60%</b>
+                    </div>
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-css.svg" class="icone-habilidades" alt="Icone da Tecnologia Cascading Style Sheets" title="CSS" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-intermediario">50%</b>
+                    </div>
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-javascript.svg" class="icone-habilidades" alt="Icone da linguagem de programação Javascript" title="Javascript" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                    </div>
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-estudando">30%</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Backend-->
+              <div id="habilidades-back">
+                <div class="borda-padrao azul-claro">
+                  <h3 class="titulo-bloco-habilidades">Back-end</h3>
+                  <div id="backend" class="bloco-habilidades">
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Versionamento de código-->
+              <div id="habilidades-vers">
+                <div class="borda-padrao azul-claro">
+                  <h3 class="titulo-bloco-habilidades">Versionamento</h3>
+                  <div id="verionamento" class="bloco-habilidades">
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-git.svg" class="icone-habilidades" alt="Icone da ferramenta de versionamento GIT" title="GIT" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Banco de dados-->
+              <div id="habilidades-banco">
+                <div class="borda-padrao azul-claro">
+                  <h3 class="titulo-bloco-habilidades">Banco de dados</h3>
+                  <div id="banco-de-dados" class="bloco-habilidades">
+                    <div class="item-bloco-habilidades">
+                      <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
+                      <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="txt-sobre-mim" class="container fundo-borrado borda-dupla rosa-shock">
+              <p class="txt-principal">Passo boa parte do meu dia trabalhando e estudando sobre a tecnologia que estou focado em aprender, atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque tecnologia-destaque html">HTML</span>, <span class="txt-destaque tecnologia-destaque css">CSS</span> e <span class="txt-destaque tecnologia-destaque javascript">Javascript</span>.</p>
+              <br />
+              <p class="txt-principal">Sou novo nesse universo da tecnologia, finalizei a minha graduação em <span class="txt-descricao" style="font-size: 26px; font-style: italic;">Análise e Desenvolvimento de Sistemas</span> no fim de 2023 e antes disso não sabia nada sobre o assunto, acabei conhecendo a programação através de videos na internet e depois que criei meu primeiro algoritmo eu não quis mais parar.</p>
+              <br />
+              <p class="txt-principal">No meu tempo livre, gosto de jogar no meu Xbox ou assistir a algum filme para me desprender um pouco da correria do dia a dia. Sou grande fã dos jogos da nova geração; por outro lado, prefiro assistir aos filmes da velha geração.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ╔═╗╔╗  ╦╔═╗╔╦╗╦╦  ╦╔═╗
+      ║ ║╠╩╗ ║║╣  ║ ║╚╗╔╝║ ║
+      ╚═╝╚═╝╚╝╚═╝ ╩ ╩ ╚╝ ╚═╝ 
+    -->
+    <section id="secao-objetivo" class="secoes">
+      <div id="objetivo" class="img-de-fundo espacamento-div">
+        <h1 id="titulo-objetivo" class="titulo-principal">Objetivo</h1>
+        <div id="bloco-item-objetivo" class="container-fluid fundo-borrado borda-dupla azul-claro">
+          <div id="div-img-objetivo">
+            <!-- <img id="img-pc-3d" class="img-moldura" src="./Icones/icone-pc-3d.png" alt="Animação de um garoto mexendo no computador" /> -->
+            <img id="gif-coding" class="img-moldura" src="https://i.pinimg.com/originals/35/d5/54/35d554f31bd87bf3f5097830af38332b.gif" alt="Animação de um garoto mexendo no computador" />
+          </div>
+          <div id="div-txt-objetivo">
+            <p class="txt-principal">Meu objetivo atual é realizar a pós-graduação em <span class="txt-destaque tecnologia-destaque" style="color: lightblue">Engenharia de Software</span> e continuar estudando sobre os assuntos que me interessam na programação.</p>
+            <p class="txt-principal">Além de <span class="txt-destaque tecnologia-destaque html">HTML</span>, <span class="txt-destaque tecnologia-destaque css">CSS</span> e <span class="txt-destaque tecnologia-destaque javascript">Javascript</span>, eu pretendo aprimorar os conhecimentos no Front-end com <span class="txt-destaque tecnologia-destaque react">React</span> e alguns frameworks (ainda não definidos).</p>
+            <p class="txt-principal">Tambem desejo estudar mais sobre outras tecnologias e linguagens como o <span class="txt-destaque tecnologia-destaque nodejs">Node.JS</span>, <span class="txt-destaque tecnologia-destaque sql">SQL</span>, <span class="txt-destaque tecnologia-destaque csharp">C#</span> e <span class="txt-destaque tecnologia-destaque py">Py</span><span class="txt-destaque tecnologia-destaque thon">thon</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ╔═╗╦═╗╔═╗ ╦╔═╗╔╦╗╔═╗╔═╗
+      ╠═╝╠╦╝║ ║ ║║╣  ║ ║ ║╚═╗
+      ╩  ╩╚═╚═╝╚╝╚═╝ ╩ ╚═╝╚═╝  
+    -->
+    <section id="secao-projetos" class="secoes">
+      <div id="projetos" class="img-de-fundo espacamento-div">
+        <h1 id="titulo-projetos" class="titulo-principal">Projetos</h1>
+        <div id="div-introd-projetos" class="txt-principal container fundo-escuro borda-dupla verde-claro">
+          <p class="txt-principal">Todos os projetos dessa seção foram criados em diferentes partes do meu aprendizado, alguns estão mais simples justamente porque foi o que eu consegui elaborar enquanto ainda estava no inicio dos estudos sobre programação.</p>
+          <p class="txt-principal">Nenhum projeto foi copiado da internet, criei todos inteiramente sozinho pegando apenas referencias de projetos básicos em outros perfis.</p>
+        </div>
+        <div id="grid-projetos">
+          <!--FRONTEND-->
+          <div id="projetos-frontend" class="container fundo-borrado borda-padrao verde-claro">
+            <!--Carousel Front-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!--PROJETO - CALCULADORA-->
+                <div class="front-item carousel-item active" data-bs-interval="80000">
+                  <div class="div-titulo-projetos">
+                    <h2 class="sub-titulo deslocamento-txt">Calculadora</h2>
+                    <div class="tec-usada-item container">
+                      <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
+                      <img class="icone-tec-item" src="./Icones/icone-javascript.svg" alt="Icone da tecnologia Javascript" title="Javascript" />
+                    </div>
+                  </div>
+                  <div class="div-img-projetos">
+                    <img class="item-img-projetos" src="./Imagens-projetos/Calculadora.png" alt="Projeto Calculadora" />
+                  </div>
+                  <div class="desc-item">
+                    <p class="txt-descricao">Uma calculadora que realiza as operações básicas da matemática (Soma, Subtração, Multiplicação e Divisão) e com recurso para alterar o estilo com outras cores: Padrão (Azul), Vermelho, Verde, Roxo, ou Alto Contraste</p>
+                  </div>
+                  <div class="div-btn-projetos">
+                    <a href="https://mileriss.github.io/Calculadora/" target="_blank"><button class="btn-desc-projetos borda-padrao azul-claro txt-descricao btn-usar-projeto">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Calculadora" target="_blank"><button class="btn-desc-projetos borda-padrao vermelho txt-descricao btn-repositorio">Repositorio</button></a>
+                  </div>
+                </div>
+
+                <!--PROJETO - LOGIN, CADASTRO, SENHA-->
+                <div class="front-item carousel-item" data-bs-interval="80000">
+                  <div class="div-titulo-projetos">
+                    <h2 class="sub-titulo deslocamento-txt">Login - Cadastro - Senha</h2>
+                    <div class="tec-usada-item container">
+                      <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
+                      <img class="icone-tec-item" src="./Icones/icone-javascript.svg" alt="Icone da tecnologia Javascript" title="Javascript" />
+                    </div>
+                  </div>
+                  <div class="div-img-projetos">
+                    <img class="item-img-projetos" src="./Imagens-projetos/Login-Cadastro-Senha.png" alt="Projeto de tela de login, cadastro e senha" />
+                  </div>
+                  <div class="desc-item">
+                    <p class="txt-descricao">Criei 3 telas para praticar o uso de validações básicas de formulário, onde é possível realizar o cadastro seguindo determinadas condições, alterar a senha cadastrada de acordo com determinados parametros e realizar o login.</p>
+                  </div>
+                  <div class="div-btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Tela_Login_Cadastro/blob/main/Tela%20Login/tela_login.html" target="_blank"><button class="btn-desc-projetos borda-padrao azul-claro txt-descricao btn-usar-projeto">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Tela_Login_Cadastro" target="_blank"><button class="btn-desc-projetos borda-padrao vermelho txt-descricao btn-repositorio">Repositorio</button></a>
+                  </div>
+                </div>
+
+                <!--LISTA DE TAREFAS-->
+                <div class="front-item carousel-item" data-bs-interval="80000">
+                  <div class="div-titulo-projetos">
+                    <h2 class="sub-titulo deslocamento-txt">Lista de tarefas</h2>
+                    <div class="tec-usada-item container">
+                      <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
+                      <img class="icone-tec-item" src="./Icones/icone-javascript.svg" alt="Icone da tecnologia Javascript" title="Javascript" />
+                    </div>
+                  </div>
+                  <div class="div-img-projetos">
+                    <img class="item-img-projetos" src="./Imagens-projetos/Lista-tarefas.png" alt="Projeto Lista de tarefas" />
+                  </div>
+                  <div class="desc-item">
+                    <p class="txt-descricao">Um sistema CRUD bem simples para criar, visualizar, alterar e deletar tarefas de uma lista. É uma tela simples, porem, existe uma programação com Javascript que permite o usuário ter maior controle sobre as atividades inseridas.</p>
+                  </div>
+                  <div class="div-btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Lista_de_tarefas/blob/main/index.html" target="_blank"><button class="btn-desc-projetos borda-padrao azul-claro txt-descricao btn-usar-projeto">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Lista_de_tarefas" target="_blank"><button class="btn-desc-projetos borda-padrao vermelho txt-descricao btn-repositorio">Repositorio</button></a>
+                  </div>
+                </div>
+
+                <!--PÁGINA TALKD V1-->
+                <div class="front-item carousel-item" data-bs-interval="80000">
+                  <div class="div-titulo-projetos">
+                    <h2 class="sub-titulo deslocamento-txt">Pagina Talkd V1</h2>
+                    <div class="tec-usada-item container">
+                      <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
+                      <img class="icone-tec-item" src="./Icones/icone-javascript.svg" alt="Icone da tecnologia Javascript" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-bootstrap.svg" alt="Icone da tecnologia Bootstrap" title="Bootstrap" />
+                    </div>
+                  </div>
+                  <div class="div-img-projetos">
+                    <img class="item-img-projetos" src="./Imagens-projetos/Pagina-talkd-v1.png" alt="Projeto Página Talkd v1" />
+                  </div>
+                  <div class="desc-item">
+                    <p class="txt-descricao">Essa página foi criada como um "teste" para substituir a página que era utilizada pela empresa <b>Talkd Soluções em Atendimento</b>, local onde eu trabalhei como Auxiliar de projetos até pouco tempo atrás.</p>
+                  </div>
+                  <div class="div-btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Pagina-TalkD/blob/main/V1/pag_inicial.html" target="_blank"><button class="btn-desc-projetos borda-padrao azul-claro txt-descricao btn-usar-projeto">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos borda-padrao vermelho txt-descricao btn-repositorio">Repositorio</button></a>
+                  </div>
+                </div>
+
+                <!--PÁGINA TALKD V2-->
+                <div class="front-item carousel-item" data-bs-interval="80000">
+                  <div class="div-titulo-projetos">
+                    <h2 class="sub-titulo deslocamento-txt">Pagina Talkd V2</h2>
+                    <div class="tec-usada-item container">
+                      <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
+                      <img class="icone-tec-item" src="./Icones/icone-javascript.svg" alt="Icone da tecnologia Javascript" title="Javascript" />
+                      <img class="icone-tec-item" src="./Icones/icone-bootstrap.svg" alt="Icone da tecnologia Bootstrap" title="Bootstrap" />
+                    </div>
+                  </div>
+                  <div class="div-img-projetos">
+                    <img class="item-img-projetos" src="./Imagens-projetos/Pagina-talkd-v2.png" alt="Projeto Página Talkd v2" />
+                  </div>
+                  <div class="desc-item">
+                    <p class="txt-descricao">Essa é uma versão mais elaborada da página criada para a <b>Talkd Soluções em Atendimento</b>, após criar a página de testes e ver que o pessoal aceitou a idéia eu decidi me empenhar em criar uma página com mais recursos.</p>
+                  </div>
+                  <div class="div-btn-projetos">
+                    <a href="https://mileriss.github.io/talkd/index.html" target="_blank"><button class="btn-desc-projetos borda-padrao azul-claro txt-descricao btn-usar-projeto">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos borda-padrao vermelho txt-descricao btn-repositorio">Repositorio</button></a>
+                  </div>
+                </div>
+              </div>
+              <button id="btn-carousel-anterior" class="carousel-control-prev verde-claro" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span id="icone-btn-carousel-anterior" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button id="btn-carousel-anterior" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span id="icone-btn-carousel-proximo" class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ╔═╗╔═╗╔╗╔╔╦╗╔═╗╔╦╗╔═╗
+      ║  ║ ║║║║ ║ ╠═╣ ║ ║ ║
+      ╚═╝╚═╝╝╚╝ ╩ ╩ ╩ ╩ ╚═╝   
+    -->
+    <section id="secao-contato" class="secoes">
+      <div id="contato" class="img-de-fundo espacamento-div">
+        <h1 id="titulo-contato" class="titulo-principal">Contato</h1>
+        <div id="div-form" class="row container borda-dupla pessego fundo-escuro">
+          <div id="txt-introd-form" class="txt-principal">
+            <p class="txt-principal txt-form-contato">Obrigado por ter visitado a minha página.</p>
+            <br>
+            <p id="vamos-conversar" class="titulo-principal">Vamos conversar!</p>
+          </div>
+          <div id="form-contato" class="borda-padrao laranja">
+            <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
+              <label class="form-lbl" for="nome"><span class="inp-obrigatorio">*</span>Nome:</label><br />
+              <input class="form-inp txt-secundario borda-padrao pessego" placeholder="Digite seu nome..." type="text" name="nome" maxlength="20" title="Máximo de 30 caracteres" required /><br />
+              <label class="form-lbl" for="contato"><span class="inp-obrigatorio">*</span>Contato:</label><br />
+              <input class="form-inp txt-secundario borda-padrao pessego" placeholder="Digite seu contato..." type="number" name="contato" maxlength="11" title="Sem espaços ou traços" required /><br />
+              <label class="form-lbl" for="email">Email:</label><br />
+              <input class="form-inp txt-secundario borda-padrao pessego" placeholder="Digite seu e-mail..." type="email" name="email" autocomplete="email" title="Preencha este campo (Não obrigatório)" /><br />
+              <label class="form-lbl" for="solicitacao"><span class="inp-obrigatorio">*</span>Solicitação:</label><br />
+              <textarea id="form-inp-textarea" class="form-inp borda-padrao pessego" placeholder="Deixe sua solicitação, sugestão, elogio ou critica..." name="solicitacao" maxlength="250" title="Máximo de 250 caracteres" required></textarea><br />
+              <div id="form-btn">
+                <button class="btn-enviar borda-padrao pessego txt-descricao" type="submit">Enviar</button>
+              </div>
+
+              <div id="form-icones-contato">
+                <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img id="icone-gmail" class="icone-form-contato" src="./Icones/icone-gmail.svg" alt="Icone do sistema de e-mails GMAIL" title="Gmail" /></a>
+                <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img id="icone-linkedin" class="icone-form-contato" src="./Icones/icone-linkedin-2.svg" alt="Icone da rede social Linkedin" title="Linkedin" /></a>
+                <a href="https://api.whatsapp.com/send/?phone=55011994521196" target="_blank"><img id="icone-whatsapp" class="icone-form-contato" src="./Icones/icone-whatsapp.svg" alt="Icone da rede social Whatsapp" title="Whatsapp" /></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
+  </body>
+</html>

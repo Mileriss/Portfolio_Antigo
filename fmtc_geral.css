@@ -1,0 +1,351 @@
+/*
+╔═╗╔═╗╦═╗╔╦╗╔═╗╔╦╗╔═╗╔═╗╔═╗╔═╗  ╔═╗╔═╗╦═╗╔═╗╦  
+╠╣ ║ ║╠╦╝║║║╠═╣ ║ ╠═╣║  ╠═╣║ ║  ║ ╦║╣ ╠╦╝╠═╣║  
+╚  ╚═╝╩╚═╩ ╩╩ ╩ ╩ ╩ ╩╚═╝╩ ╩╚═╝  ╚═╝╚═╝╩╚═╩ ╩╩═╝
+*/
+:root {
+    /*Paleta de cores neon*/
+    --neon-roxo: rgb(126, 20, 255);
+    --neon-roxo-escuro: rgb(62, 20, 77);
+    --neon-lilas: rgb(172, 33, 253);
+    --neon-rosa-claro: rgb(234, 0, 255);
+    --neon-rosa-shock: rgb(245, 41, 139);
+    --neon-azul-claro: rgb(22, 131, 248);
+    --neon-azul-escuro: rgb(32, 5, 138);
+    --neon-verde-claro: rgb(165, 253, 43);
+    --neon-verde: rgb(76, 255, 0);
+    --neon-amarelo: rgb(250, 236, 46);
+    --neon-prateado: rgb(184, 185, 187);
+    --neon-vermelho: rgb(179, 0, 24);
+    --neon-laranja: rgb(255, 103, 0);
+    --neon-salmao: rgb(255, 153, 153);
+    --neon-pessego: rgb(255, 229, 180);
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: black !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*FONTE EXTERNA - PIXELADO*/
+@font-face {
+    font-family: "PIXELADO";
+    src: url(./Fontes-externas/04b_30/PIXELADO.TTF);
+}
+
+/*FONTE EXTERNA - TECH*/
+@font-face {
+    font-family: "TECH";
+    src: url(./Fontes-externas/aldo_the_apache/TECH.ttf);
+}
+
+/*BOOTSTRAP*/
+
+/*! Icone para alterar slide na seção PROJETOS*/
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: black !important;
+    border: 2px solid white !important;
+    border-radius: 10px;
+    height: fit-content !important;
+    width: 100px !important;
+    position: relative;
+    top: 50% !important;
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+
+
+/*! Espaçamento padrão para separar as divs*/
+.espacamento-div {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/*! Titulo principal das seções*/
+.titulo-principal {
+    font-family: 'Tektur', cursive;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*! Sub-titulo de cada seção*/
+.sub-titulo {
+    font-family: 'TECH', 'Share Tech Mono', monospace;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.deslocamento-txt {
+    color: black;
+    animation: subtitulo-mexendo 2s ease-in-out alternate infinite;
+    -webkit-text-stroke: 1px white;
+}
+
+@keyframes subtitulo-mexendo {
+    0% {
+        text-shadow: -3px -3px 1px var(--neon-rosa-shock);
+        -webkit-text-stroke: 1px var(--neon-rosa-shock);
+    }
+
+    25% {
+
+        text-shadow: -3px -3px 5px var(--neon-roxo);
+        -webkit-text-stroke: 1px var(--neon-roxo);
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px var(--neon-azul-claro);
+        -webkit-text-stroke: 1px var(--neon-azul-claro);
+    }
+
+    75% {
+
+        text-shadow: 2.5px 2.5px 5px var(--neon-verde-claro);
+        -webkit-text-stroke: 1px var(--neon-verde-claro);
+    }
+
+    100% {
+        transition: cubic-bezier(0.77, 0, 0.175, 1);
+        text-shadow: 5px 5px 1px var(--neon-amarelo);
+        -webkit-text-stroke: 1px var(--neon-amarelo);
+    }
+
+}
+
+
+/*! Texto de resumo nas seções*/
+.txt-principal {
+    font-size: 36px;
+    font-family: 'Share Tech', 'Kanit', sans-serif;
+    color: white;
+}
+
+/*! Texto usado nos grids e blocos*/
+.txt-secundario {
+    font-size: 26px;
+    font-family: 'Kanit', 'Share Tech', sans-serif;
+    color: white;
+}
+
+/*! Texto com fonte PIXELADA para destaque de palavras*/
+.txt-destaque {
+    font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+}
+
+/*! Texto usado nas descrições*/
+.txt-descricao{
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+/* Tecnologias em destaque*/
+.html{
+    color: orangered;
+    text-shadow: 0px 0px 10px orangered !important;
+}
+.css{
+    color: steelblue;
+    text-shadow: 0px 0px 10px steelblue !important;
+}
+.javascript{
+    color: goldenrod;
+    text-shadow: 0px 0px 10px goldenrod !important;
+}
+.react{
+    color: darkcyan;
+    text-shadow: 0px 0px 10px darkcyan !important;
+}
+.nodejs{
+    color: darkgreen;
+    text-shadow: 0px 0px 10px darkgreen !important;
+}
+.sql{
+    color: lightslategrey;
+    text-shadow: 0px 0px 10px lightslategrey !important;
+}
+.csharp{
+    color: blueviolet;
+    text-shadow: 0px 0px 10px blueviolet !important;
+}
+.py{
+    color: gold;
+    text-shadow: 0px 0px 10px gold !important;
+}
+.thon{
+    color: blue;
+    text-shadow: 0px 0px 10px blue !important;
+}
+
+/*! Formatação para as tecnologias detacadas nos textos*/
+.tecnologia-destaque {
+    text-shadow: 5px 5px 5px black;
+    -webkit-text-stroke: 1.5px black;
+}
+
+/*! Configuração do papel de parede das seções*/
+.img-de-fundo {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*! Formatação para escurecer o fundo de alguma div*/
+.fundo-escuro {
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*! Formatação para escurecer e borrar o fundo de alguma div*/
+.fundo-borrado {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/*
+╔╗ ╔═╗╦═╗╔╦╗╔═╗╔═╗   ╔═╗╔═╗╦═╗╔═╗╔═╗  ╔═╗  ╔═╗╔═╗╔╦╗╔╗ ╦═╗╔═╗╔═╗
+╠╩╗║ ║╠╦╝ ║║╠═╣╚═╗   ║  ║ ║╠╦╝║╣ ╚═╗  ║╣   ╚═╗║ ║║║║╠╩╗╠╦╝╠═╣╚═╗
+╚═╝╚═╝╩╚══╩╝╩ ╩╚═╝┘  ╚═╝╚═╝╩╚═╚═╝╚═╝  ╚═╝  ╚═╝╚═╝╩ ╩╚═╝╩╚═╩ ╩╚═╝
+*/
+
+/*! Formatação para bordas */
+.borda-padrao{
+    border-width: 2.5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.borda-dupla{
+    border-width: 10px;
+    border-style: double;
+    border-radius: 10px;
+}
+
+/*! Formatação das cores das bordas */
+.roxo{
+    border-color: var(--neon-roxo);
+    box-shadow: 0px 0px 10px var(--neon-roxo);
+}
+.roxo-escuro{
+    border-color: var(--neon-roxo-escuro);
+    box-shadow: 0px 0px 10px var(--neon-roxo-escuro);
+}
+.lilas{
+    border-color: var(--neon-lilas);
+    box-shadow: 0px 0px 10px var(--neon-lilas);
+}
+.rosa-claro{
+    border-color: var(--neon-rosa-claro);
+    box-shadow: 0px 0px 10px var(--neon-rosa-claro);
+}
+.rosa-shock{
+    border-color: var(--neon-rosa-shock);
+    box-shadow: 0px 0px 10px var(--neon-rosa-shock);
+}
+.azul-claro{
+    border-color: var(--neon-azul-claro);
+    box-shadow: 0px 0px 10px var(--neon-azul-claro);
+}
+.azul-escuro{
+    border-color: var(--neon-azul-escuro);
+    box-shadow: 0px 0px 10px var(--neon-azul-escuro);
+}
+.verde-claro{
+    border-color: var(--neon-verde-claro);
+    box-shadow: 0px 0px 10px var(--neon-verde-claro);
+}
+.verde{
+    border-color: var(--neon-verde);
+    box-shadow: 0px 0px 10px var(--neon-verde);
+}
+.amarelo{
+    border-color: var(--neon-amarelo);
+    box-shadow: 0px 0px 10px var(--neon-amarelo);
+}
+.prateado{
+    border-color: var(--neon-prateado);
+    box-shadow: 0px 0px 10px var(--neon-prateado);
+}
+.vermelho{
+    border-color: var(--neon-vermelho);
+    box-shadow: 0px 0px 10px var(--neon-vermelho);
+}
+.laranja{
+    border-color: var(--neon-laranja);
+    box-shadow: 0px 0px 10px var(--neon-laranja);
+}
+.salmao{
+    border-color: var(--neon-salmao);
+    box-shadow: 0px 0px 10px var(--neon-salmao);
+}
+.pessego{
+    border-color: var(--neon-pessego);
+    box-shadow: 0px 0px 10px var(--neon-pessego);
+}
+.preto{
+    border-color: black;
+    box-shadow: 0px 0px 50px black;
+}
+
+/*! Animação para borda com variação de roxo*/
+@keyframes piscando-roxo {
+    0%{
+        border-color: var(--neon-roxo);
+        box-shadow: 0px 0px 10px var(--neon-roxo);
+    }
+    100%{
+        border-color: var(--neon-roxo-escuro);
+        box-shadow: 0px 0px 10px var(--neon-roxo-escuro);
+    }
+}
+
+/*! Animação para borda com variação de rosa*/
+@keyframes piscando-rosa {
+    0%{
+        border-color: var(--neon-lilas);
+        box-shadow: 0px 0px 10px var(--neon-lilas);
+    }
+    50%{
+        border-color: var(--neon-rosa-claro);
+        box-shadow: 0px 0px 10px var(--neon-rosa-claro);
+    }
+    100%{
+        border-color: var(--neon-rosa-shock);
+        box-shadow: 0px 0px 10px var(--neon-rosa-shock);
+    }
+}
+
+/*! Animação para borda com variação azul*/
+@keyframes piscando-azul {
+    0%{
+        border-color: var(--neon-azul-claro);
+        box-shadow: 0px 0px 10px var(--neon-azul-claro);
+    }
+    100%{
+        border-color: var(--neon-azul-escuro);
+        box-shadow: 0px 0px 10px var(--neon-azul-escuro);
+    }
+}
+
+/*! Animação para borda com variação de verde*/
+@keyframes piscando-verde {
+    70%{
+        border-color: var(--neon-verde-claro);
+        box-shadow: 0px 0px 10px var(--neon-verde-claro);
+    }
+    80%{
+        border-color: var(--neon-verde);
+        box-shadow: 0px 0px 10px var(--neon-verde);
+    }
+}
